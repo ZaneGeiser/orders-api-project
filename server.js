@@ -60,6 +60,6 @@ server.delete('/delete/:id', (request,response)=>{
      });
 
 
-server.listen(3000,()=>{
+server.listen(process.env.PORT || 3000,()=>{
  console.log('Express server started at port 3000');
 });
